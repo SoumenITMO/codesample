@@ -328,7 +328,6 @@ public class BookingSearchService {
                 guestSearchDto.getRateCode() == "" && guestSearchDto.getSharesGUid() == 0 &&
                 guestSearchDto.getMealPlanCode() == "") && guestSearchDto.getGuestName() == "") {
 
-/*                System.out.println("Fetching from Spl Serv table ...  ");
                 ocmTrBkgVstSplServiceRangeDao.getFirstBySplSrvTypeAndUnitCode(guestSearchDto.getSplSrvType(),
                     loginDetails.getUnitCode()).forEach(getSingleSplServData -> {
 
@@ -358,7 +357,7 @@ public class BookingSearchService {
                     guestSearchResultDto.setRoomRate(getSingleSplServData.getOcmTrListReservedGuest().getRoomRate());
 
                     guestSearchResultDtos.add(guestSearchResultDto);
-                });*/
+                });
         }
         return guestSearchResultDtos;
     }
